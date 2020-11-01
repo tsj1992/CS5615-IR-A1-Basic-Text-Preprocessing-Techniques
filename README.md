@@ -29,13 +29,21 @@ It is better to have a separate conda environment with python3. Follow the instr
         - `conda install -c anaconda ipykernel`
 7. Add your conda environment to jupyter notebook as a specific kernel as follows.
     - `python -m ipykernel install --user --name=yourenvname`
-8. Within your activated conda environment, navigate to the assignment repository directory in your machine and open jupyter notebook as follows and then open the assignment notebook and run the tests. After opening the assignment notebook, remember to choose the kernel specified to your environment from the **Kernel menu > Change kernel > yourenvname**.
-    - `jupyter notebook`
-9. You can delete the conda environment you created to evaluate this assignment by the following command.
+8. Install the following packages in the conda environment which are the dependencies of the assignment code.
+   - `conda install -c conda-forge pyspellchecker`
+9.  After finish grading the assignment, you can delete the conda environment you created if you want by the following command.
     - `conda remove -n yourenvname -all`
+10. If you need any external assistance in conda environment setup, use this resource.
+    - https://uoa-eresearch.github.io/eresearch-cookbook/recipe/2014/11/20/conda/
 
-### <ins>2. Preprocessing 'assignment_data.txt'</ins>
+### <ins>2. Preprocessing '**assignment_data.txt**'</ins>
 
-1. Clone the following git repo into your machine.
+1. The code is already there in the uploaded submission just in case. But, it is better to get it cloned from the repository.
+2. Clone the following git repo into your machine.
    - `https://github.com/tsj1992/CS5615-IR-A1-Basic-Text-Preprocessing-Techniques.git`
-2. Olarika
+3. Activate your conda environment and navigate to inside the repository folder that you downloaded in the previous step. Then run jupyter notebook server.
+   - `jupyter notebook`
+4. After opening the assignment notebook **Text-Preprocessor-209338R.ipynb**, remember to choose the kernel specified to your environment from the menu bar as follows
+   - Kernel menu > Change kernel > yourenvname
+5. Then go along with the instructions given in the notebook. There are some NLTK downloads that you need to do along the way. They are clearly mentioned in the notebook itself.
+6. GOOD LUCK AND ENJOY !!!
