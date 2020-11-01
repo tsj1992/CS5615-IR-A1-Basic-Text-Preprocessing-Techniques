@@ -22,14 +22,14 @@ It is better to have a separate conda environment with python3. Follow the instr
     - `conda deactivate`
 6. ADDITIONAL STEP: To make sure Jupyter notebook and Ipykernel are installed in your conda environment.
     1. Check whether Jupyter notebok and Ipykernel 
-        - `conda list | grep jupyter`
+        - `conda list | grep notebook`
         - `conda list | grep ipykernel`
     2. If the above commands doesn't output anything to the terminal, install the packages as follows.
         - `conda install -c conda-forge notebook`
         - `conda install -c anaconda ipykernel`
 7. Add your conda environment to jupyter notebook as a specific kernel as follows.
     - `python -m ipykernel install --user --name=yourenvname`
-8. Open jupyter notebook by the following command and then open the assignment notebook and run the tests.
+8. Within your activated conda environment, navigate to the assignment repository directory in your machine and open jupyter notebook as follows and then open the assignment notebook and run the tests. After opening the assignment notebook, remember to choose the kernel specified to your environment from the **Kernel menu > Change kernel > yourenvname**.
     - `jupyter notebook`
 9. You can delete the conda environment you created to evaluate this assignment by the following command.
     - `conda remove -n yourenvname -all`
